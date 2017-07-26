@@ -1,24 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13168.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8V7-Eu-7tZ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13147.4"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--我是第三頁-->
+        <scene sceneID="Ioe-ZV-SBW">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" id="8bC-Xf-vdC">
+                <viewController title="我是第三頁" id="1R7-CL-QA1" customClass="ViewController" customModule="navigationControllerTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="okj-45-oHj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我是第三頁" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VI7-Tq-Jd9">
+                                <rect key="frame" x="124" y="318" width="127" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="VI7-Tq-Jd9" firstAttribute="centerX" secondItem="okj-45-oHj" secondAttribute="centerX" id="CH5-zZ-zd6"/>
+                            <constraint firstItem="VI7-Tq-Jd9" firstAttribute="centerY" secondItem="okj-45-oHj" secondAttribute="centerY" id="SBG-il-5gd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5cO-VW-THb"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hM0-pM-mHm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vSL-db-E6c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1932" y="124"/>
+        </scene>
+        <!--我是第二頁-->
+        <scene sceneID="k76-a3-Byc">
+            <objects>
+                <viewController title="我是第二頁" id="j7k-LL-GpP" customClass="ViewController" customModule="navigationControllerTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tgF-L1-Ldq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我是第二頁" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WWi-sm-BgE">
+                                <rect key="frame" x="124" y="318" width="127" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EjV-NE-8fu">
+                                <rect key="frame" x="136.5" y="370" width="102" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="前往第三頁">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="1R7-CL-QA1" kind="show" id="NpA-XR-W35"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="EjV-NE-8fu" firstAttribute="centerX" secondItem="tgF-L1-Ldq" secondAttribute="centerX" id="5vX-KT-yiX"/>
+                            <constraint firstItem="WWi-sm-BgE" firstAttribute="centerY" secondItem="tgF-L1-Ldq" secondAttribute="centerY" id="jIj-Bh-Wgd"/>
+                            <constraint firstItem="WWi-sm-BgE" firstAttribute="centerX" secondItem="tgF-L1-Ldq" secondAttribute="centerX" id="lzM-ZM-zxw"/>
+                            <constraint firstItem="EjV-NE-8fu" firstAttribute="top" secondItem="WWi-sm-BgE" secondAttribute="bottom" constant="22" id="q96-aN-Zpr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qNt-cK-TxK"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="第二頁" id="Wuh-aG-S3f"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uYl-1A-YxJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1222" y="124"/>
+        </scene>
+        <!--我是第一頁-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="我是第一頁" id="BYZ-38-t0r" customClass="ViewController" customModule="navigationControllerTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我是第一頁" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jnf-H8-0N0">
+                                <rect key="frame" x="124" y="318" width="127" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rQs-MQ-wPU">
+                                <rect key="frame" x="136.5" y="379" width="102" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="前往第二頁">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="j7k-LL-GpP" kind="show" id="gkJ-E6-sOk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="jnf-H8-0N0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="24t-ox-gEA"/>
+                            <constraint firstItem="rQs-MQ-wPU" firstAttribute="top" secondItem="jnf-H8-0N0" secondAttribute="bottom" constant="31" id="Gzb-xZ-2Ah"/>
+                            <constraint firstItem="rQs-MQ-wPU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="efJ-hn-e7O"/>
+                            <constraint firstItem="jnf-H8-0N0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yeF-EC-bwD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="YWM-hm-JJ9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="464.80000000000001" y="123.68815592203899"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3Q0-86-Vxs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8V7-Eu-7tZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Cub-XK-Uth">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="qJh-tm-4jp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XlW-dn-LbT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-257" y="124"/>
         </scene>
     </scenes>
 </document>
